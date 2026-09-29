@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ify Lights">
+  <defs>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb547"/>
+      <stop offset="1" stop-color="#ff8a3d" stop-opacity=".18"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffb547" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ffb547" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#0b0b0c"/>
+  <rect x=".75" y=".75" width="62.5" height="62.5" rx="14.25" fill="none" stroke="#f3efe8" stroke-opacity=".12" stroke-width="1.5"/>
+  <circle cx="32" cy="15" r="11" fill="url(#glow)"/>
+  <path d="M28.6 22.5h6.8L42 50.5H22z" fill="url(#beam)"/>
+  <ellipse cx="32" cy="51" rx="11" ry="2.2" fill="#ffb547" opacity=".45"/>
+  <circle cx="32" cy="15" r="5.6" fill="#ffb547"/>
+  <circle cx="30.4" cy="13.4" r="1.6" fill="#fff4dc"/>
+</svg>

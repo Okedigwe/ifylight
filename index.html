@@ -20,10 +20,12 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://ifylights.vercel.app/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1920" imagesrcset="https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w, https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1400 1400w, https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1920 1920w" imagesizes="100vw">
+    <link rel="preconnect" href="https://videos.pexels.com">
     <link rel="preload" as="font" type="font/woff2" href="fonts/bricolage.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/inter.woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
@@ -36,7 +38,7 @@
  "description": "Stage lighting, studio lighting, DMX controllers, effects and truss for sale in Lagos, Nigeria.",
  "url": "https://ifylights.vercel.app/",
  "image": "https://ifylights.vercel.app/og-image.jpg",
- "logo": "https://ifylights.vercel.app/logo.jpg",
+ "logo": "https://ifylights.vercel.app/icon-512.png",
  "telephone": "+2347043709023",
  "email": "ifyteex@gmail.com",
  "address": {
@@ -387,8 +389,8 @@
     <header class="site-header" id="top">
         <div class="bar">
             <a href="#top" class="brand" aria-label="Ify Lights Stage and Studio – home">
-                <img src="logo.jpg" alt="" width="44" height="44">
-                <span class="brand-name">Ify Lights<small>Stage &amp; Studio</small></span>
+                <img src="favicon.svg" alt="" width="44" height="44">
+                <span class="brand-name"><span>Ify <em>Lights</em></span><small>Stage &amp; Studio</small></span>
             </a>
             <nav id="site-nav" aria-label="Main">
                 <a href="#equipment">Equipment</a>
@@ -406,7 +408,7 @@
     <main>
         <!-- HERO -->
         <section class="hero" id="hero">
-            <img class="hero-bg" src="https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1920" srcset="https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w, https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1400 1400w, https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1920 1920w" sizes="100vw" alt="" fetchpriority="high">
+            <div class="bg-fixed"><video class="bg-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1542732351-fa2c82b0c746?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" data-sd="https://videos.pexels.com/video-files/8515272/8515272-sd_960_540_25fps.mp4" data-hd="https://videos.pexels.com/video-files/8515272/8515272-hd_1920_1080_25fps.mp4" aria-hidden="true"></video></div>
             <div class="hero-shade"></div>
             <div class="hero-spot" aria-hidden="true"></div>
             <div class="wrap hero-grid">
@@ -423,14 +425,22 @@
                     </div>
                 </div>
 
-                <a class="hero-card reveal" href="#equipment" data-open="12" aria-label="View the KOSEFX Intelligent Moving Head Beam">
-                    <span class="hero-card-img"><img src="ify12.jpg" alt="KOSEFX Intelligent Moving Head Beam at the Ify Lights shop" width="506" height="900"></span>
-                    <span class="hero-card-body">
+                <div class="hero-card reveal" id="hero-card">
+                    <div class="hero-card-img">
+                        <img class="hc-slide on" src="ify12.jpg" alt="KOSEFX Intelligent Moving Head Beam at the Ify Lights shop" data-id="12" data-title="KOSEFX Intelligent Moving Head Beam" width="506" height="900">
+                        <img class="hc-slide" src="ify1.jpg" alt="Multi-Head Moving Beam Light at the Ify Lights shop" data-id="1" data-title="Multi-Head Moving Beam Light" width="506" height="900" loading="lazy">
+                        <img class="hc-slide" src="ify29.jpg" alt="Mini Spider Moving Head LED at the Ify Lights shop" data-id="29" data-title="Mini Spider Moving Head LED" width="506" height="900" loading="lazy">
+                        <img class="hc-slide" src="ify18.jpg" alt="KOSEFX 1500W LED Fog Machine at the Ify Lights shop" data-id="18" data-title="KOSEFX 1500W LED Fog Machine" width="506" height="900" loading="lazy">
+                        <img class="hc-slide" src="ify30.jpg" alt="Wireless Cold Spark System at the Ify Lights shop" data-id="30" data-title="Wireless Cold Spark System" width="506" height="900" loading="lazy">
+                        <img class="hc-slide" src="ify33.jpg" alt="LED Studio Panel Light with Barn Doors at the Ify Lights shop" data-id="33" data-title="LED Studio Panel Light with Barn Doors" width="506" height="900" loading="lazy">
+                        <span class="hc-progress"><i></i></span>
+                    </div>
+                    <div class="hero-card-body">
                         <span class="eyebrow">In stock now</span>
-                        <strong>KOSEFX Intelligent Moving Head Beam</strong>
-                        <span class="hero-card-link">View this fixture <svg class="ic"><use href="#i-arrow"/></svg></span>
-                    </span>
-                </a>
+                        <strong id="hc-title"></strong>
+                        <button class="hero-card-link" id="hc-open" type="button">View this fixture <svg class="ic"><use href="#i-arrow"/></svg></button>
+                    </div>
+                </div>
             </div>
 
             <div class="wrap">
@@ -458,27 +468,33 @@
                     <h2>Built for every <em>stage</em>.</h2>
                     <p class="section-sub">Tell us what you’re lighting. We’ll point you to the right fixtures, controller and effects for the space and the budget.</p>
                 </header>
-                <div class="solutions">
-                    <a class="sol reveal" href="#equipment" data-filter="stage">
+                <div class="slider slider-sol" data-autoplay="4200">
+                    <div class="track">
+                    <a class="sol" href="#equipment" data-filter="stage">
                         <img src="https://images.unsplash.com/photo-1565804951749-2426372cdc74?auto=format&amp;fit=crop&amp;q=70&amp;w=800" srcset="https://images.unsplash.com/photo-1565804951749-2426372cdc74?auto=format&amp;fit=crop&amp;q=70&amp;w=500 500w, https://images.unsplash.com/photo-1565804951749-2426372cdc74?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w" sizes="(max-width: 700px) 90vw, 33vw" alt="Blue stage light beams behind a cross in a church" loading="lazy">
                         <span class="sol-body"><span class="sol-no">01</span><strong>Churches &amp; worship</strong><span class="sol-text">Wash the stage, light the choir and add beams and haze for worship moments.</span><span class="sol-link">See the gear <svg class="ic"><use href="#i-arrow"/></svg></span></span>
                     </a>
-                    <a class="sol reveal" href="#equipment" data-filter="stage">
+                    <a class="sol" href="#equipment" data-filter="stage">
                         <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&amp;fit=crop&amp;q=70&amp;w=800" srcset="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&amp;fit=crop&amp;q=70&amp;w=500 500w, https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w" sizes="(max-width: 700px) 90vw, 33vw" alt="Crowd in front of a lit concert stage" loading="lazy">
                         <span class="sol-body"><span class="sol-no">02</span><strong>Concerts &amp; festivals</strong><span class="sol-text">High-output beams, moving heads, lasers and truss for big stages.</span><span class="sol-link">See the gear <svg class="ic"><use href="#i-arrow"/></svg></span></span>
                     </a>
-                    <a class="sol reveal" href="#equipment" data-filter="effects">
+                    <a class="sol" href="#equipment" data-filter="effects">
                         <img src="https://images.unsplash.com/photo-1723832348105-2e69f948135a?auto=format&amp;fit=crop&amp;q=70&amp;w=800" srcset="https://images.unsplash.com/photo-1723832348105-2e69f948135a?auto=format&amp;fit=crop&amp;q=70&amp;w=500 500w, https://images.unsplash.com/photo-1723832348105-2e69f948135a?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w" sizes="(max-width: 700px) 90vw, 33vw" alt="Decorated banquet hall set for a wedding reception" loading="lazy">
                         <span class="sol-body"><span class="sol-no">03</span><strong>Weddings &amp; event centres</strong><span class="sol-text">Uplighting, pars, cold spark and fog for grand entrances and first dances.</span><span class="sol-link">See the gear <svg class="ic"><use href="#i-arrow"/></svg></span></span>
                     </a>
-                    <a class="sol reveal" href="#equipment" data-filter="effects">
+                    <a class="sol" href="#equipment" data-filter="effects">
                         <img src="https://images.unsplash.com/photo-1657208431551-cbf415b8ef26?auto=format&amp;fit=crop&amp;q=70&amp;w=800" srcset="https://images.unsplash.com/photo-1657208431551-cbf415b8ef26?auto=format&amp;fit=crop&amp;q=70&amp;w=500 500w, https://images.unsplash.com/photo-1657208431551-cbf415b8ef26?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w" sizes="(max-width: 700px) 90vw, 33vw" alt="Teal and purple spotlights cutting through haze in a club" loading="lazy">
                         <span class="sol-body"><span class="sol-no">04</span><strong>Clubs &amp; lounges</strong><span class="sol-text">Spider heads, pixel bars, lasers and effects that keep the floor moving.</span><span class="sol-link">See the gear <svg class="ic"><use href="#i-arrow"/></svg></span></span>
                     </a>
-                    <a class="sol reveal" href="#equipment" data-filter="studio">
+                    <a class="sol" href="#equipment" data-filter="studio">
                         <img src="https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?auto=format&amp;fit=crop&amp;q=70&amp;w=800" srcset="https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?auto=format&amp;fit=crop&amp;q=70&amp;w=500 500w, https://images.unsplash.com/photo-1612544409025-e1f6a56c1152?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w" sizes="(max-width: 700px) 90vw, 33vw" alt="Film crew on a soundstage with lighting equipment" loading="lazy">
                         <span class="sol-body"><span class="sol-no">05</span><strong>Film, TV &amp; photo studios</strong><span class="sol-text">Bi-colour LED panels, COB lights and barn doors for clean, controllable light.</span><span class="sol-link">See the gear <svg class="ic"><use href="#i-arrow"/></svg></span></span>
                     </a>
+                    </div>
+                    <div class="slider-ui">
+                        <div class="dots" aria-hidden="true"></div>
+                        <div class="arrows"><button class="arr prev" aria-label="Previous"><svg class="ic"><use href="#i-left"/></svg></button><button class="arr next" aria-label="Next"><svg class="ic"><use href="#i-right"/></svg></button></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -491,7 +507,7 @@
                         <p class="eyebrow">The equipment</p>
                         <h2>Lighting equipment <em>for sale</em> in Lagos.</h2>
                     </div>
-                    <p class="section-sub">Every item below is photographed in our shop. Tap a photo to see it up close, or ask for the price on WhatsApp.</p>
+                    <p class="section-sub">Every item is photographed in our shop. Swipe through each range, tap a photo to see it up close, or ask for the price on WhatsApp.</p>
                 </header>
 
                 <div class="toolbar reveal">
@@ -510,8 +526,15 @@
                     </label>
                 </div>
 
-                <div class="grid" id="grid">
-                    <article class="card reveal" data-category="stage" data-id="1" data-cat-label="Stage Lights">
+                <div class="rows" id="rows">
+                    <div class="row" data-category="stage">
+                        <div class="row-head">
+                            <h3>Stage Lights <span>12</span></h3>
+                            <div class="arrows"><button class="arr prev" aria-label="Previous Stage Lights"><svg class="ic"><use href="#i-left"/></svg></button><button class="arr next" aria-label="Next Stage Lights"><svg class="ic"><use href="#i-right"/></svg></button></div>
+                        </div>
+                        <div class="slider" data-autoplay="3600">
+                            <div class="track">
+                    <article class="card" data-category="stage" data-id="1" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify1-lg.jpg" aria-label="View larger photo of Multi-Head Moving Beam Light">
                             <img src="ify1.jpg" alt="Multi-Head Moving Beam Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -526,7 +549,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Multi-Head%20Moving%20Beam%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="12" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="12" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify12-lg.jpg" aria-label="View larger photo of KOSEFX Intelligent Moving Head Beam">
                             <img src="ify12.jpg" alt="KOSEFX Intelligent Moving Head Beam for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -541,7 +564,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20KOSEFX%20Intelligent%20Moving%20Head%20Beam.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="13" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="13" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify13-lg.jpg" aria-label="View larger photo of Beam Moving Head Light">
                             <img src="ify13.jpg" alt="Beam Moving Head Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -556,7 +579,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Beam%20Moving%20Head%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="27" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="27" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify27-lg.jpg" aria-label="View larger photo of LED Spot Moving Head">
                             <img src="ify27.jpg" alt="LED Spot Moving Head for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -571,7 +594,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Spot%20Moving%20Head.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="29" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="29" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify29-lg.jpg" aria-label="View larger photo of Mini Spider Moving Head LED">
                             <img src="ify29.jpg" alt="Mini Spider Moving Head LED for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -586,7 +609,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Mini%20Spider%20Moving%20Head%20LED.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="26" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="26" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify26-lg.jpg" aria-label="View larger photo of 10x40W LED Moving Head Pixel Bar">
                             <img src="ify26.jpg" alt="10x40W LED Moving Head Pixel Bar for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -601,7 +624,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%2010x40W%20LED%20Moving%20Head%20Pixel%20Bar.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="9" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="9" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify9-lg.jpg" aria-label="View larger photo of LED Par Stage Wash Light">
                             <img src="ify9.jpg" alt="LED Par Stage Wash Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -616,7 +639,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Par%20Stage%20Wash%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="22" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="22" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify22-lg.jpg" aria-label="View larger photo of 24-LED Par Can Wash Light">
                             <img src="ify22.jpg" alt="24-LED Par Can Wash Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -631,7 +654,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%2024-LED%20Par%20Can%20Wash%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="23" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="23" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify23-lg.jpg" aria-label="View larger photo of High-Power LED Par Wash Light">
                             <img src="ify23.jpg" alt="High-Power LED Par Wash Light for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -646,7 +669,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20High-Power%20LED%20Par%20Wash%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="20" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="20" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify20-lg.jpg" aria-label="View larger photo of LED Pixel Bar Wash Light">
                             <img src="ify20.jpg" alt="LED Pixel Bar Wash Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -661,7 +684,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Pixel%20Bar%20Wash%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="21" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="21" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify21-lg.jpg" aria-label="View larger photo of LED Wall Washer Bar">
                             <img src="ify21.jpg" alt="LED Wall Washer Bar for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -676,7 +699,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Wall%20Washer%20Bar.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="stage" data-id="24" data-cat-label="Stage Lights">
+                    <article class="card" data-category="stage" data-id="24" data-cat-label="Stage Lights">
                         <a class="card-media" href="ify24-lg.jpg" aria-label="View larger photo of Compact RGB LED Effect Light">
                             <img src="ify24.jpg" alt="Compact RGB LED Effect Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -691,7 +714,18 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Compact%20RGB%20LED%20Effect%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="effects" data-id="31" data-cat-label="Effects &amp; Lasers">
+                            </div>
+                            <div class="bar" aria-hidden="true"><i></i></div>
+                        </div>
+                    </div>
+                    <div class="row" data-category="effects">
+                        <div class="row-head">
+                            <h3>Effects &amp; Lasers <span>5</span></h3>
+                            <div class="arrows"><button class="arr prev" aria-label="Previous Effects &amp; Lasers"><svg class="ic"><use href="#i-left"/></svg></button><button class="arr next" aria-label="Next Effects &amp; Lasers"><svg class="ic"><use href="#i-right"/></svg></button></div>
+                        </div>
+                        <div class="slider" data-autoplay="4050">
+                            <div class="track">
+                    <article class="card" data-category="effects" data-id="31" data-cat-label="Effects &amp; Lasers">
                         <a class="card-media" href="ify31-lg.jpg" aria-label="View larger photo of Dual-Aperture Laser Show System">
                             <img src="ify31.jpg" alt="Dual-Aperture Laser Show System for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -706,7 +740,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Dual-Aperture%20Laser%20Show%20System.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="effects" data-id="32" data-cat-label="Effects &amp; Lasers">
+                    <article class="card" data-category="effects" data-id="32" data-cat-label="Effects &amp; Lasers">
                         <a class="card-media" href="ify32-lg.jpg" aria-label="View larger photo of Laser Show System – DMX Interface">
                             <img src="ify32.jpg" alt="Laser Show System – DMX Interface for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -721,7 +755,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Laser%20Show%20System%20%E2%80%93%20DMX%20Interface.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="effects" data-id="18" data-cat-label="Effects &amp; Lasers">
+                    <article class="card" data-category="effects" data-id="18" data-cat-label="Effects &amp; Lasers">
                         <a class="card-media" href="ify18-lg.jpg" aria-label="View larger photo of KOSEFX 1500W LED Fog Machine">
                             <img src="ify18.jpg" alt="KOSEFX 1500W LED Fog Machine for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -736,7 +770,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20KOSEFX%201500W%20LED%20Fog%20Machine.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="effects" data-id="19" data-cat-label="Effects &amp; Lasers">
+                    <article class="card" data-category="effects" data-id="19" data-cat-label="Effects &amp; Lasers">
                         <a class="card-media" href="ify19-lg.jpg" aria-label="View larger photo of LED Fog Machine">
                             <img src="ify19.jpg" alt="LED Fog Machine for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -751,7 +785,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Fog%20Machine.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="effects" data-id="30" data-cat-label="Effects &amp; Lasers">
+                    <article class="card" data-category="effects" data-id="30" data-cat-label="Effects &amp; Lasers">
                         <a class="card-media" href="ify30-lg.jpg" aria-label="View larger photo of Wireless Cold Spark System">
                             <img src="ify30.jpg" alt="Wireless Cold Spark System for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -766,7 +800,18 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Wireless%20Cold%20Spark%20System.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="14" data-cat-label="Controllers &amp; DMX">
+                            </div>
+                            <div class="bar" aria-hidden="true"><i></i></div>
+                        </div>
+                    </div>
+                    <div class="row" data-category="control">
+                        <div class="row-head">
+                            <h3>Controllers &amp; DMX <span>8</span></h3>
+                            <div class="arrows"><button class="arr prev" aria-label="Previous Controllers &amp; DMX"><svg class="ic"><use href="#i-left"/></svg></button><button class="arr next" aria-label="Next Controllers &amp; DMX"><svg class="ic"><use href="#i-right"/></svg></button></div>
+                        </div>
+                        <div class="slider" data-autoplay="4500">
+                            <div class="track">
+                    <article class="card" data-category="control" data-id="14" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify14-lg.jpg" aria-label="View larger photo of King Kong 1024 Moving Light Controller">
                             <img src="ify14.jpg" alt="King Kong 1024 Moving Light Controller for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -781,7 +826,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20King%20Kong%201024%20Moving%20Light%20Controller.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="15" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="15" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify15-lg.jpg" aria-label="View larger photo of Professional Moving-Light Console">
                             <img src="ify15.jpg" alt="Professional Moving-Light Console for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -796,7 +841,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Professional%20Moving-Light%20Console.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="16" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="16" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify16-lg.jpg" aria-label="View larger photo of DMX-384B Intelligent Lighting Controller">
                             <img src="ify16.jpg" alt="DMX-384B Intelligent Lighting Controller for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -811,7 +856,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20DMX-384B%20Intelligent%20Lighting%20Controller.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="17" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="17" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify17-lg.jpg" aria-label="View larger photo of DMX-384B Controller (Top View)">
                             <img src="ify17.jpg" alt="DMX-384B Controller (Top View) for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -826,7 +871,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20DMX-384B%20Controller%20%28Top%20View%29.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="2" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="2" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify2-lg.jpg" aria-label="View larger photo of DMX-240A Lighting Controller">
                             <img src="ify2.jpg" alt="DMX-240A Lighting Controller for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -841,7 +886,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20DMX-240A%20Lighting%20Controller.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="3" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="3" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify3-lg.jpg" aria-label="View larger photo of DMX-240A Intelligent Lighting Controller">
                             <img src="ify3.jpg" alt="DMX-240A Intelligent Lighting Controller for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -856,7 +901,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20DMX-240A%20Intelligent%20Lighting%20Controller.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="7" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="7" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify7-lg.jpg" aria-label="View larger photo of Wireless DMX Transmitter / Receiver">
                             <img src="ify7.jpg" alt="Wireless DMX Transmitter / Receiver for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -871,7 +916,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Wireless%20DMX%20Transmitter%20/%20Receiver.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="control" data-id="8" data-cat-label="Controllers &amp; DMX">
+                    <article class="card" data-category="control" data-id="8" data-cat-label="Controllers &amp; DMX">
                         <a class="card-media" href="ify8-lg.jpg" aria-label="View larger photo of 6-Way DMX Signal Splitter">
                             <img src="ify8.jpg" alt="6-Way DMX Signal Splitter for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -886,7 +931,18 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%206-Way%20DMX%20Signal%20Splitter.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="studio" data-id="33" data-cat-label="Studio Lighting">
+                            </div>
+                            <div class="bar" aria-hidden="true"><i></i></div>
+                        </div>
+                    </div>
+                    <div class="row" data-category="studio">
+                        <div class="row-head">
+                            <h3>Studio Lighting <span>5</span></h3>
+                            <div class="arrows"><button class="arr prev" aria-label="Previous Studio Lighting"><svg class="ic"><use href="#i-left"/></svg></button><button class="arr next" aria-label="Next Studio Lighting"><svg class="ic"><use href="#i-right"/></svg></button></div>
+                        </div>
+                        <div class="slider" data-autoplay="4950">
+                            <div class="track">
+                    <article class="card" data-category="studio" data-id="33" data-cat-label="Studio Lighting">
                         <a class="card-media" href="ify33-lg.jpg" aria-label="View larger photo of LED Studio Panel Light with Barn Doors">
                             <img src="ify33.jpg" alt="LED Studio Panel Light with Barn Doors for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -901,7 +957,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Studio%20Panel%20Light%20with%20Barn%20Doors.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="studio" data-id="34" data-cat-label="Studio Lighting">
+                    <article class="card" data-category="studio" data-id="34" data-cat-label="Studio Lighting">
                         <a class="card-media" href="ify34-lg.jpg" aria-label="View larger photo of LED Studio Panel (Front View)">
                             <img src="ify34.jpg" alt="LED Studio Panel (Front View) for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -916,7 +972,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20LED%20Studio%20Panel%20%28Front%20View%29.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="studio" data-id="35" data-cat-label="Studio Lighting">
+                    <article class="card" data-category="studio" data-id="35" data-cat-label="Studio Lighting">
                         <a class="card-media" href="ify35-lg.jpg" aria-label="View larger photo of Bi-Colour LED Studio Panel">
                             <img src="ify35.jpg" alt="Bi-Colour LED Studio Panel for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -931,7 +987,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Bi-Colour%20LED%20Studio%20Panel.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="studio" data-id="28" data-cat-label="Studio Lighting">
+                    <article class="card" data-category="studio" data-id="28" data-cat-label="Studio Lighting">
                         <a class="card-media" href="ify28-lg.jpg" aria-label="View larger photo of 100W COB LED Light">
                             <img src="ify28.jpg" alt="100W COB LED Light for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -946,7 +1002,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20100W%20COB%20LED%20Light.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="studio" data-id="11" data-cat-label="Studio Lighting">
+                    <article class="card" data-category="studio" data-id="11" data-cat-label="Studio Lighting">
                         <a class="card-media" href="ify11-lg.jpg" aria-label="View larger photo of Wall-Mounted Media Monitor">
                             <img src="ify11.jpg" alt="Wall-Mounted Media Monitor for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -961,7 +1017,18 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Wall-Mounted%20Media%20Monitor.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="rigging" data-id="4" data-cat-label="Truss &amp; Power">
+                            </div>
+                            <div class="bar" aria-hidden="true"><i></i></div>
+                        </div>
+                    </div>
+                    <div class="row" data-category="rigging">
+                        <div class="row-head">
+                            <h3>Truss &amp; Power <span>5</span></h3>
+                            <div class="arrows"><button class="arr prev" aria-label="Previous Truss &amp; Power"><svg class="ic"><use href="#i-left"/></svg></button><button class="arr next" aria-label="Next Truss &amp; Power"><svg class="ic"><use href="#i-right"/></svg></button></div>
+                        </div>
+                        <div class="slider" data-autoplay="5400">
+                            <div class="track">
+                    <article class="card" data-category="rigging" data-id="4" data-cat-label="Truss &amp; Power">
                         <a class="card-media" href="ify4-lg.jpg" aria-label="View larger photo of Aluminium Square Truss">
                             <img src="ify4.jpg" alt="Aluminium Square Truss for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -976,7 +1043,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Aluminium%20Square%20Truss.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="rigging" data-id="6" data-cat-label="Truss &amp; Power">
+                    <article class="card" data-category="rigging" data-id="6" data-cat-label="Truss &amp; Power">
                         <a class="card-media" href="ify6-lg.jpg" aria-label="View larger photo of Heavy-Duty Aluminium Lighting Truss">
                             <img src="ify6.jpg" alt="Heavy-Duty Aluminium Lighting Truss for sale in Lagos – Ify Lights" width="506" height="900" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -991,7 +1058,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Heavy-Duty%20Aluminium%20Lighting%20Truss.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="rigging" data-id="5" data-cat-label="Truss &amp; Power">
+                    <article class="card" data-category="rigging" data-id="5" data-cat-label="Truss &amp; Power">
                         <a class="card-media" href="ify5-lg.jpg" aria-label="View larger photo of DMX / Power Cable Spools">
                             <img src="ify5.jpg" alt="DMX / Power Cable Spools for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -1006,7 +1073,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20DMX%20/%20Power%20Cable%20Spools.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="rigging" data-id="10" data-cat-label="Truss &amp; Power">
+                    <article class="card" data-category="rigging" data-id="10" data-cat-label="Truss &amp; Power">
                         <a class="card-media" href="ify10-lg.jpg" aria-label="View larger photo of Portable Stage Power Distribution Box">
                             <img src="ify10.jpg" alt="Portable Stage Power Distribution Box for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -1021,7 +1088,7 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%20Portable%20Stage%20Power%20Distribution%20Box.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
-                    <article class="card reveal" data-category="rigging" data-id="25" data-cat-label="Truss &amp; Power">
+                    <article class="card" data-category="rigging" data-id="25" data-cat-label="Truss &amp; Power">
                         <a class="card-media" href="ify25-lg.jpg" aria-label="View larger photo of 6-Way Power Distribution Box">
                             <img src="ify25.jpg" alt="6-Way Power Distribution Box for sale in Lagos – Ify Lights" width="900" height="506" loading="lazy" decoding="async">
                             <span class="card-zoom"><svg class="ic"><use href="#i-expand"/></svg></span>
@@ -1036,6 +1103,10 @@
                             <a class="card-wa" href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27m%20interested%20in%20the%206-Way%20Power%20Distribution%20Box.%20Please%20send%20the%20price%20and%20availability." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg> Ask price</a>
                         </div>
                     </article>
+                            </div>
+                            <div class="bar" aria-hidden="true"><i></i></div>
+                        </div>
+                    </div>
                 </div>
                 <p class="empty" id="empty" hidden>No match. <a href="https://wa.me/2347043709023?text=Hello%20Ify%20Lights%2C%20I%27d%20like%20prices%20for%20your%20lighting%20equipment." target="_blank" rel="noopener">Ask us on WhatsApp</a>. We may have it in stock.</p>
             </div>
@@ -1043,7 +1114,7 @@
 
         <!-- CINEMATIC QUOTE -->
         <section class="quote-band">
-            <img src="https://images.unsplash.com/photo-1573339887617-d674bc961c31?auto=format&amp;fit=crop&amp;q=70&amp;w=1920" srcset="https://images.unsplash.com/photo-1573339887617-d674bc961c31?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w, https://images.unsplash.com/photo-1573339887617-d674bc961c31?auto=format&amp;fit=crop&amp;q=70&amp;w=1920 1920w" sizes="100vw" alt="" loading="lazy">
+            <div class="bg-fixed"><video class="bg-video" autoplay muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1573339887617-d674bc961c31?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" data-sd="https://videos.pexels.com/video-files/7269180/7269180-sd_960_540_25fps.mp4" data-hd="https://videos.pexels.com/video-files/7269180/7269180-hd_1920_1080_25fps.mp4" aria-hidden="true"></video></div>
             <div class="quote-shade"></div>
             <div class="wrap">
                 <blockquote class="reveal">
@@ -1072,8 +1143,18 @@
         <section class="section section-about" id="about">
             <div class="wrap about">
                 <div class="about-media reveal">
-                    <img class="am-1" src="https://images.unsplash.com/photo-1762028894947-427157955fea?auto=format&amp;fit=crop&amp;q=70&amp;w=900" alt="Moving head lights on a truss above a stage" loading="lazy" width="900" height="1125">
-                    <img class="am-2" src="ify26.jpg" alt="10x40W LED moving head pixel bar lit red in the Ify Lights shop" loading="lazy" width="506" height="900">
+                    <div class="am-1 fader" data-interval="4500">
+                        <img class="on" src="https://images.unsplash.com/photo-1762028894947-427157955fea?auto=format&amp;fit=crop&amp;q=70&amp;w=900" alt="Moving head lights on a truss above a stage" loading="lazy">
+                        <img class="" src="https://images.unsplash.com/photo-1573339887617-d674bc961c31?auto=format&amp;fit=crop&amp;q=70&amp;w=900" alt="Lighting fixtures rigged on a truss" loading="lazy">
+                        <img class="" src="https://images.unsplash.com/photo-1510384742052-1abcb6282645?auto=format&amp;fit=crop&amp;q=70&amp;w=900" alt="Worship band on a stage lit with spotlights" loading="lazy">
+                    </div>
+                    <div class="am-2 fader" data-interval="3200">
+                        <img class="on" src="ify26.jpg" alt="10x40W LED Moving Head Pixel Bar in the Ify Lights shop" loading="lazy">
+                        <img class="" src="ify27.jpg" alt="LED Spot Moving Head in the Ify Lights shop" loading="lazy">
+                        <img class="" src="ify9.jpg" alt="LED Par Stage Wash Light in the Ify Lights shop" loading="lazy">
+                        <img class="" src="ify31.jpg" alt="Dual-Aperture Laser Show System in the Ify Lights shop" loading="lazy">
+                        <img class="" src="ify35.jpg" alt="Bi-Colour LED Studio Panel in the Ify Lights shop" loading="lazy">
+                    </div>
                     <span class="am-badge">Real stock,<br><em>shot in our shop</em></span>
                 </div>
                 <div class="about-copy reveal">
@@ -1111,7 +1192,7 @@
 
         <!-- CONTACT -->
         <section class="contact" id="contact">
-            <img src="https://images.unsplash.com/photo-1607872863060-fb85bd7229c4?auto=format&amp;fit=crop&amp;q=70&amp;w=1920" srcset="https://images.unsplash.com/photo-1607872863060-fb85bd7229c4?auto=format&amp;fit=crop&amp;q=70&amp;w=900 900w, https://images.unsplash.com/photo-1607872863060-fb85bd7229c4?auto=format&amp;fit=crop&amp;q=70&amp;w=1920 1920w" sizes="100vw" alt="" loading="lazy">
+            <div class="bg-fixed"><video class="bg-video" autoplay muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1607872863060-fb85bd7229c4?auto=format&amp;fit=crop&amp;q=70&amp;w=1600" data-sd="https://videos.pexels.com/video-files/12748107/12748107-sd_960_540_30fps.mp4" data-hd="https://videos.pexels.com/video-files/12748107/12748107-hd_1920_1080_30fps.mp4" aria-hidden="true"></video></div>
             <div class="contact-shade"></div>
             <div class="wrap contact-grid">
                 <div class="contact-copy reveal">
@@ -1145,7 +1226,7 @@
     <footer class="footer">
         <div class="wrap footer-grid">
             <div class="footer-brand">
-                <a href="#top" class="brand"><img src="logo.jpg" alt="" width="44" height="44"><span class="brand-name">Ify Lights<small>Stage &amp; Studio</small></span></a>
+                <a href="#top" class="brand"><img src="favicon.svg" alt="" width="44" height="44"><span class="brand-name"><span>Ify <em>Lights</em></span><small>Stage &amp; Studio</small></span></a>
                 <p>Professional stage and studio lighting equipment for sale in Lagos, Nigeria.</p>
                 <div class="socials">
                     <a href="https://wa.me/2347043709023" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
@@ -1183,7 +1264,7 @@
         </div>
         <div class="wrap footer-base">
             <p>&copy; <span id="year">2026</span> Ify Lights Stage and Studio. All rights reserved.</p>
-            <p>Event photography from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. Product photos are our own.</p>
+            <p>Event photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>, videos from <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a>. Product photos are our own.</p>
         </div>
     </footer>
 
